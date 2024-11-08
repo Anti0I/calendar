@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.scss';
+import { Header, Calendar } from './components';
+import plan from "./_plan"
 
 function App() {
   return (
     <div className='App'>
-      <h1>Techni Calendar</h1>
+      <Header />
+      <div className='container'>
+      <Calendar plan={plan}/>
+      </div>
     </div>
       
   );

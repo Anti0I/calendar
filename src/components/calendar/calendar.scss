@@ -1,0 +1,39 @@
+@import "../../colors.scss";
+
+.app-calendar-container {
+  .table {
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+
+    .col {
+      padding: 10px;
+      min-width: 200px;
+
+      .day {
+        text-transform: capitalize;
+        font-size: 20px;
+        color: $intensive;
+      }
+      .row {
+        border-bottom: 1px solid $border;
+        padding: 8px 4px 4px 8px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:hover {
+          background: $hover;
+        }
+
+        .lesson {
+          display: inline-block;
+          font-weight: bold;
+          margin-right: 8px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

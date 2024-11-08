@@ -1,0 +1,11 @@
+@import "../../colors.scss";
+
+.app-header-container {
+    background: $background;
+    padding: 10px 20px;
+
+    h1 {
+        color: white;
+        margin: 0;
+    }
+}
